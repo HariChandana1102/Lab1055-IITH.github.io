@@ -13,3 +13,52 @@ h1, h2 { margin-bottom:1rem; }
 section { margin-bottom:2rem; }
 .two-col { display:grid; grid-template-columns:1fr 2fr; gap:1rem; }
 footer { text-align:center; padding:1rem; font-size:0.9rem; color:#666; border-top:1px solid #ddd; }
+/* Navigation Bar */
+nav {
+  background-color: #777;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  position: relative;
+}
+
+nav a {
+  display: block;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #f2662d;
+}
+
+/* Dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #777;
+  min-width: 220px;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
