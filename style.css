@@ -76,11 +76,11 @@ nav a:hover {
 }
 
 .team-member img {
-  width: 15px;
-  height: 15px;
-  object-fit: cover;
-  border-radius: 100px;
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
   display: block;
-  margin: 0 auto 0.5rem auto;
+  margin: 0 auto 1rem auto;
 }
 
