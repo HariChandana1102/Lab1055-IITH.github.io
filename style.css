@@ -78,7 +78,9 @@ nav a:hover {
 .team-member img {
   width: 150px;
   height: 150px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
+  object-fit: cover;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto 0.5rem auto;
 }
 
