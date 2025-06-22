@@ -91,10 +91,10 @@ nav a:hover {
 }
 
 .faculty-row img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
+    width: 100px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
