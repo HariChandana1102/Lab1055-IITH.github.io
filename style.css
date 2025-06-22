@@ -61,4 +61,25 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  text-align: center;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
 
