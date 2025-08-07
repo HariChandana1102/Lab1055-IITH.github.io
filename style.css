@@ -1,19 +1,31 @@
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: Arial, sans-serif; line-height:1.6; color:#333; }
-header { background:#222; color:#fff; padding:2rem 1rem; text-align:center; }
-header img { width:150px; border-radius:50%; }
-nav { background:#444; }
-nav ul { list-style:none; display:flex; justify-content:center; }
-nav li { margin:0 1rem; }
-nav a { color:#fff; text-decoration:none; padding:0.75rem; display:block; }
-nav a:hover { background:#555; }
-.container { max-width:1000px; margin:2rem auto; padding:0 1rem; }
-h1, h2 { margin-bottom:1rem; }
-.hero { text-align:center; margin-bottom:2rem; }
-section { margin-bottom:2rem; }
-.two-col { display:grid; grid-template-columns:1fr 2fr; gap:1rem; }
-footer { text-align:center; padding:1rem; font-size:0.9rem; color:#666; border-top:1px solid #ddd; }
-/* Navigation Bar */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Navigation */
 nav {
   background-color: #777;
   display: flex;
@@ -43,7 +55,7 @@ nav a:hover {
   background-color: #f2662d;
 }
 
-/* Dropdown content */
+/* Dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -61,6 +73,44 @@ nav a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+/* Container and Layout */
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #ddd;
+}
+
+/* Team Section */
 .team-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -83,6 +133,8 @@ nav a:hover {
   display: block;
   margin: 0 auto 1rem auto;
 }
+
+/* Faculty Row */
 .faculty-row {
   display: flex;
   align-items: flex-start;
@@ -91,7 +143,7 @@ nav a:hover {
 }
 
 .faculty-row img {
-    width: 180px !important;
+  width: 180px !important;
   height: 180px !important;
   object-fit: cover !important;
   border-radius: 50% !important;
@@ -101,10 +153,12 @@ nav a:hover {
 .faculty-details {
   flex: 1;
 }
+
+/* Alumni & List Sections */
 .alumni-section {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 17px;
+  padding: 1rem;
   text-align: left;
 }
 
@@ -112,11 +166,36 @@ nav a:hover {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #4378c0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
 }
 
 .alumni-section ul {
   list-style-type: disc;
-  padding-left: 17px;
+  padding-left: 1rem;
   margin-bottom: 20px;
 }
 
+.alumni-section ul li {
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+/* Optional Link Styling (if inline links are used) */
+.alumni-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.alumni-section a:hover {
+  text-decoration: underline;
+  color: #003366;
+}
+
+/* Responsive Font Adjustment */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+}
