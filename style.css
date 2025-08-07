@@ -101,5 +101,22 @@ nav a:hover {
 .faculty-details {
   flex: 1;
 }
+.alumni-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px;
+  text-align: left;
+}
 
+.alumni-section h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.alumni-section ul {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
 
